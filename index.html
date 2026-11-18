@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn from Pallavi Gupta — English Grammar in Hindi (Class 1–5)</title>
+<meta name="description" content="Class 1 से 5 तक की पूरी English Grammar आसान हिंदी में — उदाहरण, आवाज़ और अभ्यास प्रश्नों के साथ। Learn from Pallavi Gupta.">
+<meta name="theme-color" content="#1d2b5a">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= PUBLIC LANDING PAGE ================= -->
+<section id="landingScreen" class="screen active">
+  <nav class="landing-nav">
+    <div class="brand light"><img src="pallavi.jpg" alt=""><div><b>Learn from Pallavi Gupta</b></div></div>
+    <div class="nav-links">
+      <a href="#features" class="hide-sm">विशेषताएँ</a>
+      <a href="#classes" class="hide-sm">Classes</a>
+      <a href="#contact" class="hide-sm" id="navContact">संपर्क</a>
+      <button class="btn small primary" data-open-login="student">Login</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <span class="pill">📚 Class 1 – 5 • 49 टॉपिक्स</span>
+      <h1>English Grammar अब<br><span>आसान हिंदी में</span></h1>
+      <p id="heroTagline">हर टॉपिक हिंदी में समझाया गया है — साथ में उदाहरण, उच्चारण सुनने की सुविधा और अभ्यास प्रश्न।</p>
+      <div class="hero-btns">
+        <button class="btn primary big" data-open-login="student">👧 Student Login</button>
+        <button class="btn ghost big" id="demoBtn">▶ मुफ़्त Demo देखें</button>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="pallavi.jpg" alt="Pallavi Gupta" class="hero-photo">
+      <div class="teacher-tag"><b>Pallavi Gupta</b><small>आपकी English टीचर</small></div>
+    </div>
+  </header>
+
+  <section class="landing-sec" id="features">
+    <h2>क्यों चुनें <span>Learn from Pallavi Gupta?</span></h2>
+    <div class="feature-grid">
+      <div class="feature"><div class="f-ic">🇮🇳</div><h4>हिंदी + English में समझ</h4><p>हर टॉपिक सरल हिंदी और आसान English दोनों में — जैसी ज़रूरत हो वैसे पढ़ें।</p></div>
+      <div class="feature"><div class="f-ic">🔊</div><h4>सुनकर सीखें</h4><p>हर उदाहरण का सही English उच्चारण एक क्लिक पर।</p></div>
+      <div class="feature"><div class="f-ic">🎯</div><h4>अभ्यास और टेस्ट</h4><p>हर टॉपिक पर quiz और हर Class का पूरा टेस्ट, तुरंत रिज़ल्ट।</p></div>
+      <div class="feature"><div class="f-ic">⭐</div><h4>प्रगति और Stars</h4><p>पूरे किए टॉपिक्स, स्कोर और स्टार्स — बच्चा उत्साहित रहता है।</p></div>
+      <div class="feature"><div class="f-ic">📱</div><h4>मोबाइल पर ऐप</h4><p>फ़ोन में ऐप की तरह इंस्टॉल करें, नेट कमज़ोर हो तब भी चले।</p></div>
+      <div class="feature"><div class="f-ic">🔐</div><h4>सुरक्षित लॉगिन</h4><p>हर Student को अपनी अलग Login ID और Password।</p></div>
+    </div>
+  </section>
+
+  <section class="landing-sec alt" id="classes">
+    <h2>Class अनुसार <span>सिलेबस</span></h2>
+    <div class="class-cards" id="classCards"></div>
+  </section>
+
+  <section class="landing-sec">
+    <h2>कैसे <span>शुरू करें?</span></h2>
+    <div class="steps">
+      <div class="step"><b>1</b><h4>संपर्क करें</h4><p>टीचर से Student की Login ID और Password लें।</p></div>
+      <div class="step"><b>2</b><h4>लॉगिन करें</h4><p>किसी भी फ़ोन या कंप्यूटर से वेबसाइट खोलें और लॉगिन करें।</p></div>
+      <div class="step"><b>3</b><h4>पढ़ें और अभ्यास करें</h4><p>टॉपिक पढ़ें, उदाहरण सुनें, quiz दें और Stars जीतें।</p></div>
+    </div>
+  </section>
+
+  <section class="landing-sec contact-sec" id="contact">
+    <h2>Admission के लिए <span>संपर्क करें</span></h2>
+    <div id="contactBox" class="contact-box"></div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Learn from Pallavi Gupta</span>
+    <a href="#" data-open-login="admin">Admin Login</a>
+  </footer>
+</section>
+
+<!-- ================= LOGIN SCREEN ================= -->
+<section id="loginScreen" class="screen">
+  <div class="login-wrap">
+    <div class="login-hero">
+      <img src="pallavi.jpg" alt="Pallavi Gupta" class="hero-photo">
+      <h1>Learn from<br><span>Pallavi Gupta</span></h1>
+      <p>English Grammar — Class 1 से 5 तक<br>सब कुछ आसान हिंदी में 📚</p>
+    </div>
+
+    <div class="login-card">
+      <button class="link-btn" id="backToHome">← मुख्य पेज</button>
+      <div class="tabs">
+        <button class="tab active" data-tab="student">👧 Student Login</button>
+        <button class="tab" data-tab="admin">🔐 Admin Login</button>
+      </div>
+
+      <form id="studentLoginForm" class="login-form active">
+        <label for="sId">Login ID</label>
+        <input type="text" id="sId" placeholder="अपनी Login ID डालें" autocomplete="username" autocapitalize="off" required>
+        <label for="sPass">Password</label>
+        <input type="password" id="sPass" placeholder="पासवर्ड डालें" autocomplete="current-password" autocapitalize="off" required>
+        <button type="submit" class="btn primary full">Login करें →</button>
+        <p class="hint">Login ID और Password अपनी टीचर से लें।</p>
+      </form>
+
+      <form id="adminLoginForm" class="login-form">
+        <label for="aUser">Admin Username</label>
+        <input type="text" id="aUser" placeholder="admin" autocomplete="username" autocapitalize="off" required>
+        <label for="aPass">Admin Password</label>
+        <input type="password" id="aPass" placeholder="पासवर्ड" autocomplete="current-password" required>
+        <button type="submit" class="btn dark full">Admin Portal खोलें →</button>
+        <p class="hint">यह सिर्फ़ टीचर के लिए है।</p>
+      </form>
+      <p id="loginError" class="error"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STUDENT APP ================= -->
+<section id="studentScreen" class="screen">
+  <header class="topbar">
+    <div class="brand" id="homeBrand">
+      <img src="pallavi.jpg" alt="">
+      <div><b>Learn from Pallavi Gupta</b><small>English Grammar • हिंदी + English</small></div>
+    </div>
+    <div class="user-area">
+      <span id="studentName" class="chip"></span>
+      <button class="btn small ghost" id="studentLogout">Logout</button>
+    </div>
+  </header>
+
+  <main class="container" id="studentHome">
+    <div class="welcome">
+      <div>
+        <h2 id="welcomeText">नमस्ते!</h2>
+        <p>अपनी कक्षा चुनें और टॉपिक पर क्लिक करके पढ़ना शुरू करें।</p>
+        <p class="muted" id="validityText"></p>
+        <div class="home-extras" id="homeExtras"></div>
+      </div>
+      <div class="progress-box">
+        <div class="ring" id="progressRing"><span id="progressPct">0%</span></div>
+        <small id="starCount">⭐ 0 Stars</small>
+      </div>
+    </div>
+
+    <div class="class-tabs" id="classTabs"></div>
+    <div class="tools-row">
+      <input type="search" id="topicSearch" class="search" placeholder="🔍 टॉपिक खोजें… (जैसे Noun, Tense)">
+      <button class="btn dark" id="testBtn">📝 Class Test दें</button>
+    </div>
+    <div class="topic-grid" id="topicGrid"></div>
+  </main>
+
+  <main class="container hidden" id="lessonView">
+    <button class="btn small ghost" id="backBtn">← वापस</button>
+    <article class="lesson" id="lessonContent"></article>
+  </main>
+</section>
+
+<!-- ================= ADMIN PORTAL ================= -->
+<section id="adminScreen" class="screen">
+  <header class="topbar admin">
+    <div class="brand">
+      <img src="pallavi.jpg" alt="">
+      <div><b>Admin Portal</b><small>Learn from Pallavi Gupta</small></div>
+    </div>
+    <div class="user-area">
+      <button class="btn small ghost" id="adminLogout">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="stats">
+      <div class="stat"><b id="statTotal">0</b><span>कुल Students</span></div>
+      <div class="stat"><b id="statActive">0</b><span>Active</span></div>
+      <div class="stat"><b id="statBlocked">0</b><span>Blocked / Expired</span></div>
+      <div class="stat"><b id="statTopics">0</b><span>Grammar Topics</span></div>
+    </div>
+
+    <div class="panel reminder hidden" id="reminderPanel">
+      <h3>⏰ Renewal / Fee Reminders</h3>
+      <p class="muted">इन Students का Access 15 दिन में समाप्त हो रहा है या हो चुका है।</p>
+      <div id="reminderList"></div>
+    </div>
+
+    <div class="admin-grid">
+      <div class="panel">
+        <h3 id="formTitle">➕ नया Student जोड़ें</h3>
+        <form id="studentForm">
+          <input type="hidden" id="editId">
+          <label for="fName">Student का नाम *</label>
+          <input type="text" id="fName" required placeholder="जैसे: Aarav Sharma">
+          <label for="fClass">Class *</label>
+          <select id="fClass" required>
+            <option value="1">Class 1</option><option value="2">Class 2</option>
+            <option value="3">Class 3</option><option value="4">Class 4</option>
+            <option value="5">Class 5</option><option value="0">सभी Classes (1–5)</option>
+          </select>
+          <label for="fLogin">Login ID *</label>
+          <div class="row">
+            <input type="text" id="fLogin" required placeholder="जैसे: aarav01" autocapitalize="off">
+            <button type="button" class="btn small ghost" id="genId">Auto</button>
+          </div>
+          <label for="fValid">Access कितने समय के लिए? *</label>
+          <select id="fValid">
+            <option value="1">1 महीना</option><option value="3">3 महीने</option>
+            <option value="6">6 महीने</option><option value="12" selected>12 महीने</option>
+            <option value="0">हमेशा (कोई सीमा नहीं)</option>
+          </select>
+          <label for="fPhone">अभिभावक का WhatsApp नंबर (वैकल्पिक)</label>
+          <input type="tel" id="fPhone" placeholder="जैसे: 9876543210">
+          <p class="muted small-note">🔐 Password अपने-आप बनेगा और किसी भी फ़ोन/कंप्यूटर पर चलेगा।</p>
+          <div class="row">
+            <button type="submit" class="btn primary" id="saveBtn">Student सेव करें</button>
+            <button type="button" class="btn ghost hidden" id="cancelEdit">Cancel</button>
+          </div>
+        </form>
+        <div id="credBox" class="cred hidden"></div>
+      </div>
+
+      <div class="panel wide">
+        <div class="panel-head">
+          <h3>👥 Students की सूची</h3>
+          <input type="search" id="studentSearch" placeholder="नाम / ID खोजें">
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>नाम</th><th>Class</th><th>Login ID</th><th>Password</th><th>Valid till</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="studentTable"></tbody>
+          </table>
+        </div>
+        <p id="emptyMsg" class="muted">अभी कोई Student नहीं है। बाईं तरफ़ फ़ॉर्म से जोड़ें।</p>
+      </div>
+    </div>
+
+    <div class="admin-grid two">
+      <div class="panel">
+        <h3>🔑 Admin Password बदलें</h3>
+        <form id="adminPassForm">
+          <label for="newAdminUser">नया Username</label>
+          <input type="text" id="newAdminUser" required>
+          <label for="newAdminPass">नया Password</label>
+          <input type="password" id="newAdminPass" required minlength="6" placeholder="कम से कम 6 अक्षर">
+          <button class="btn dark" type="submit">अपडेट करें</button>
+        </form>
+      </div>
+      <div class="panel">
+        <h3>💾 Backup</h3>
+        <p class="muted">Students की सूची इसी ब्राउज़र में रहती है। दूसरे कंप्यूटर पर ले जाने के लिए Backup लें।</p>
+        <div class="row">
+          <button class="btn primary" id="exportBtn">⬇ Backup लें</button>
+          <label class="btn ghost file-btn">⬆ Backup लोड करें<input type="file" id="importFile" accept=".json,application/json" hidden></label>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>
+
+<div id="toast" class="toast" role="status"></div>
+<div id="modal" class="modal hidden"><div class="modal-card" id="modalBody"></div></div>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="data-en.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
